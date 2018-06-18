@@ -1,6 +1,6 @@
 var url;
 var select;
-$(window).load(function(){
+$(document).ready(function(){
     url = $('#image-url');
     select = $('#edit-blog_image_link');
     checkSelect();
