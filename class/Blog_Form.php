@@ -54,12 +54,12 @@ class Blog_Form
         javascript('datetimepicker', null, false, true, true);
         
         $form->addText('publish_date', $blog->getPublishDate('%Y/%m/%d %H:%M'));
-        $form->setLabel('publish_date', dgettext('blog', 'Publish date/time'));
+        $form->setLabel('publish_date', 'Publish date/time');
         $form->setSize('publish_date', 20);
         $form->setClass('publish_date', 'datetimepicker');
 
         $form->addText('expire_date', $blog->getExpireDate());
-        $form->setLabel('expire_date', dgettext('blog', 'Expire date/time'));
+        $form->setLabel('expire_date', 'Expire date/time');
         $form->setSize('expire_date', 20);
         $form->setClass('expire_date', 'datetimepicker');
         $template = $form->getTemplate();
@@ -143,17 +143,17 @@ class Blog_Form
         $form->addCssClass('show_recent', 'form-control');
 
         $form->addTextField('max_width', PHPWS_Settings::get('blog', 'max_width'));
-        $form->setLabel('max_width', dgettext('blog', 'Maximum image width (50-2048)'));
+        $form->setLabel('max_width', 'Maximum image width (50-2048)');
         $form->setSize('max_width', 4, 4);
         $form->addCssClass('max_width', 'form-control');
 
         $form->addTextField('max_height', PHPWS_Settings::get('blog', 'max_height'));
-        $form->setLabel('max_height', dgettext('blog', 'Maximum image height (50-2048)'));
+        $form->setLabel('max_height', 'Maximum image height (50-2048)');
         $form->setSize('max_height', 4, 4);
         $form->addCssClass('max_height', 'form-control');
 
         $form->addTextArea('comment_script', PHPWS_Settings::get('blog', 'comment_script'));
-        $form->setLabel('comment_script', dgettext('blog', 'Paste in your comment code here (e.g. Disqus, Livefyre, Facebook, etc.)'));
+        $form->setLabel('comment_script', 'Paste in your comment code here (e.g. Disqus, Livefyre, Facebook, etc.)');
         $form->addCssClass('comment_script', 'form-control');
 
         $form->addSubmit('Save settings');

@@ -209,7 +209,7 @@ class Blog_User
 
         if (empty($result)) {
             if (Current_User::allow('blog')) {
-                MiniAdmin::add('blog', PHPWS_Text::secureLink(dgettext('blog', 'Create first blog entry!'), 'blog', array('action' => 'admin', 'command' => 'new')));
+                MiniAdmin::add('blog', PHPWS_Text::secureLink('Create first blog entry!', 'blog', array('action' => 'admin', 'command' => 'new')));
             }
 
             return NULL;
