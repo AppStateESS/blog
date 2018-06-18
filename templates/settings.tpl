@@ -50,7 +50,7 @@
       <fieldset>
         <legend>Purge</legend>
         <div class="form-group">{PURGE_DATE_LABEL} {PURGE_DATE}</div>
-        <div class="pull-right">{PURGE_CONFIRM}</div>
+        <div class="float-right">{PURGE_CONFIRM}</div>
         {date_script}
       </fieldset>
       <!-- END purge -->
