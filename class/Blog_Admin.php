@@ -306,7 +306,7 @@ class Blog_Admin
         $pageTags['ADD'] = PHPWS_Text::secureLink(
                         'Create new blog entry', 'blog',
                         array('action' => 'admin', 'command' => 'new'), null,
-                        'Create new blog entry', 'btn btn-success pull-right'
+                        'Create new blog entry', 'btn btn-success float-right'
         );
         $pageTags['ADD_URI'] = PHPWS_Text::linkAddress('blog',
                         array('action' => 'admin', 'command' => 'new'), true);
