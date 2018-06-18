@@ -9,4 +9,4 @@ $item_permissions = true;
 
 $permissions['edit_blog']   = 'Edit blog';
 $permissions['delete_blog'] = 'Delete blog';
-$permissions['settings']    = dgettext('blog', 'Change settings (Unrestricted only)');
+$permissions['settings']    = 'Change settings (Unrestricted only)';
